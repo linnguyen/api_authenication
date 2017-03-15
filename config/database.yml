@@ -27,9 +27,9 @@ test:
 production:
    adapter: sqlserver
    mode: dblib
-   dataserver: localhost
    database: api_authentication
    username: SA
    password: 123abcABC@
+   host: localhost
   
  
