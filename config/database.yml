@@ -23,12 +23,12 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
-production:
-   adapter: sqlserver
-   mode: dblib
-   database: api_authentication
-   username: SA
-   password: 123abcABC@
-   host: localhost
+# production:
+#    adapter: sqlserver
+#    mode: dblib
+#    database: api_authentication
+#    username: SA
+#    password: 123abcABC@
+#    host: localhost
   
  
