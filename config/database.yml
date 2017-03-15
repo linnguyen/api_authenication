@@ -30,6 +30,6 @@ production:
    database: api_authentication
    username: SA
    password: 123abcABC@
-   host: localhost
+   host: 127.0.0.1
   
  
