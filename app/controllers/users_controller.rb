@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
 	def create
 		user = User.create(user_params)
-		#byebug
+		byebug
 		if user.save
 			render json: user, status: :created
 		else
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
         render_error(user,404) and return
         end
     end
-
+    
     def user_params
        # ActiveModelSerializers::Deserialization.jsonapi_parse(params)
        params.require(:user).permit(:name,:email,:password)
