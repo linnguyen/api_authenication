@@ -25,5 +25,11 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+   adapter: sqlserver
+   mode: dblib
+   dataserver: localhost
+   database: api_authentication
+   username: SA
+   password: 123abcABC@
+  
+ 
