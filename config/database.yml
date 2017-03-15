@@ -13,22 +13,21 @@ development:
   # database: db/development.sqlite3
    adapter: sqlserver
    dsn: sqlserverapp
-   username: SA
-   password: 123abcABC@
-   host: localhost
-   database: api_authentication
+   username: cndata1
+   password: 123456
+   host: 222.255.132.62
+   database: testdb #api_authentication
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
   database: db/test.sqlite3
-# production:
-#    adapter: sqlserver
-#    mode: dblib
-#    database: api_authentication
-#    username: SA
-#    password: 123abcABC@
-#    host: localhost
+production:
+   adapter: sqlserver
+   database: testdb
+   username: cndata1
+   password: 123456
+   host: 222.225.132.62
   
  
